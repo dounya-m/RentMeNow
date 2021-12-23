@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppinq", sans-serif;
+    }
+.header{
+    color: rgb(255, 255, 255);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.47), rgba(0, 0, 0, 0.47)),
+    url("./background.jpg");  
+    background-size: cover;
+    background-position: center;
+    padding: 2%;
+    }  
+
+    .logo{
+        width: 25%;
+    }
+    .nav > ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sec{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-end;
+        margin-top: 10%;
+        gap: 100px;  
+        justify-content: baseline;
+    }
+    .title{
+        font-size: 42px;
+    }
+    .login{
+        display: flex;
+        gap: 80px;
+        margin-right: 8%;
+    }
+    .signin{
+        padding: 20px 48px;
+        color: #ffff;
+        font-size: 24px;
+        font-weight:bolder;
+        background-color: #D0772F;
+        border: none;
+        border-radius: 10px;
+    }
+    .signup{
+        padding: 20px 48px;
+        color: #ffff;
+        font-size: 24px;
+        font-weight:bolder;
+        background-color: transparent;
+        border-style:solid;
+        border-color: #D0772F;
+        border-radius: 10px;
+    }
+    .iconify{
+        width: 50px;
+        height: 30px;
+    }
+    .icones{
+        margin-right: 15%;
+    }
+    .disc{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    
+    }
+    .left{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .disc p{
+        font-size: 20px;
+        font-weight: 200;
+        margin-top: 5%;
+    }
+    .disc hr{
+        border: none;
+    }
+    .ser{
+        text-align: center;
+        font-size: 64px;
+        margin: 2%;
+    }
+.case {
+    margin: 5%;
+    color: #ffff;
+    display: flex;
+    gap: 15%;
+    height: 300px;
+
+}
+.case h3{
+    font-size: 36px;
+}
+.case p{
+    font-size: 20px;
+}
+
+.case1 {
+    width: 40%;
+    background: chocolate;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 10%;
+}
+.case2 {
+    width: 40%;
+    background: chocolate;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 10%;
+}.case3 {
+    width: 40%;
+    background: chocolate;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 10%;
+}

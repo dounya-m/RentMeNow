@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html"> <img src="logo.png" class="logo"></a></li>
+                <li><a href="index.html"> Acceuile</a></li>
+                <li><a href="gallery.html" >Gallerie</a></li>
+                <li><a href="booking.html">Réservation</a></li>
+                <li><a href="contact.html"  class="contact">Contact</a></li>
+            </ul>
+        </nav>
+    <div class="content">
+        <h1 class="title">
+            Get your car in a few steps
+        </h1>
+        <h3 class="slogan">
+            we’ll create high-quality linkdable content and buid at least 40 hight-autority links to each 
+            asset. paving the way for you to grow your  ranking, improve brand.
+        </h3>
+    </div>    
+    </header>   
+    <section class="reservation">
+        <div class="types">
+    <h3>Types of Vehicle</h3>  
+    <select id="Types" name="types">
+        <option value="select">Select Types</option>
+        <option value="moto">Moto</option>
+        <option value="citadine">Citadine</option>
+        <option value="compact">Compact</option>
+        <option value="berline">Berline</option>
+        <option value="utilitaire">Utilitairet</option>
+        <option value="egine">Egin de chantier</option>
+        <option value="camion">camion</option>
+    </select>
+    </div>
+    <div class="transmition">
+        <h3>Transmition</h3>   
+        <div class="inner">
+            <label class="container">
+                <input type="radio" id="manual" name="transmission" value="0">
+            Manuelle
+        </label>    
+            <label class="container">
+                <input type="radio" id="auto" name="transmission" value="0.19">
+            Automatique
+        </label>
+    </div>
+    </div>
+    <div class="fuel">
+        <h3>Fuel</h3>
+        <div class="inner">
+            <label class="container">
+                <input type="radio"  name="boit" value="0.05">
+            Electrique
+        </label>
+            <label class="container">
+                <input type="radio" name="boit" value="0.09">
+            Hybride
+        </label>
+        <label class="container">
+            <input type="radio" name="boit" value="0.14">
+            Essence
+            </label>
+            <label class="container">
+                <input type="radio"  name="boit" value="0.21">
+            Diesel
+        </label>
+    </div>
+    </div>
+    <div class="days">
+        <h3>Total Days</h3>
+        <input type="number" id="days" name="days" placeholder="put day number">
+    </div>
+    <div class="sub">
+        <button onclick="prices()">Submit</button>
+    </div>
+    <div class="total">
+        <h3>Totale: <span id="total">0</span>$</h3>
+
+    </div>
+    <footer>
+        <div class="bar">   
+            <div class="rent">
+            <img src="blacklogo.png" alt="logo">
+            </div>
+            <div class="bot">   
+            <ul>
+                <li><a href="index.html"> Acceuile</a></li>
+                <li><a href="gallery.html">Gallerie</a></li>
+                <li><a href="booking.html">Réservation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            </div> 
+        </div> 
+        <div class="media">
+            <a href="#"><span class="iconify" data-icon="akar-icons:instagram-fill" style="color: rgb(41, 41, 41);"></a></span>
+            <a href="#"><span class="iconify" data-icon="bi:facebook" style="color: rgb(51, 51, 51);"></a></span>
+            <a href="#"><span class="iconify" data-icon="akar-icons:twitter-fill" style="color: rgb(56, 56, 56);"></a></span>
+            <a href="#"><span class="iconify" data-icon="bx:bxl-telegram" style="color: rgb(58, 58, 58);"></a></span>
+        </div>
+        </footer>
+    </section>
+    <script src="booking.js"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+</body>
+</html>

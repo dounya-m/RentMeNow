@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html"> <img src="logo.png" class="logo"></a> </li>
+                <li><a href="index.html"> Acceuile</a></li>
+                <li><a href="gallery.html" >Gallerie</a></li>
+                <li><a href="booking.html">Réservation</a></li>
+                <li><a href="contact.html"  class="contact">Contact</a></li>
+            </ul>
+        </nav>
+    <div class="content">
+        <h1 class="title">
+            Get in Touch
+        </h1>
+        <h3 class="slogan">
+            we’ll create high-quality linkdable content and buid at least 40 hight-autority links to each 
+            asset. paving the way for you to grow your  ranking, improve brand.
+        </h3>
+    </div>    
+    </header>   
+    <section class="contacts">
+        <main>
+        <div class="information">
+            <div class="part1">
+                <h2>Contact Information</h2>
+                <p>we’ll create hight-quality linkable content and build
+                    at least 40 high-authority.</p>
+            </div>
+        <div class="part2">
+            <div class="flex">
+                <span class="iconify" data-icon="el:phone" style="color: white; font-size: 32px;"></span>
+            <p>+212 661 67 45 90 <br>
+                +212 535 87 45 09 </p>
+            </div>
+            <div class="flex">
+                <span class="iconify" data-icon="fluent:mail-24-filled" style="color: white; font-size: 32px;"></span>
+            <P>Support@gmail.com</P>
+            </div>
+            <div class="flex">
+                <span class="iconify" data-icon="ci:location" style="color: white; font-size: 32px;"></span>
+            <p>14 Av. Zerktouni, Safi</p>
+            </div>
+        </div>    
+        </div>
+        <div class="client">
+            <form action="#">
+                <div class="info">
+                <div class="par">
+                <div class="fullname" id="column">
+                <label for="fname">Full Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Full name..">
+                </div>
+                <div class="email" id="column">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Adress e-mail">
+                </div>
+                </div>
+                <div class="subject" id="column">
+                <label for="subject">Your subject</label>
+                <input type="text" id="subject" name="country"placeholder="Your Subject.." >
+            </div>
+            <div class="message" id="column">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Write something.." ></textarea>
+            </div>
+            <div class="sub">
+                <input type="submit" id="submit" value="Submit">
+            </div>
+            </div>
+            </form>
+        </div>
+    </main>
+        <footer>
+            <div class="bar">   
+                <div class="rent">
+                <img src="blacklogo.png" alt="logo">
+                </div>
+                <div class="bot">   
+                <ul>
+                    <li><a href="index.html"> Acceuile</a></li>
+                    <li><a href="gallerie.html">Gallerie</a></li>
+                    <li><a href="booking.html">Réservation</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                </div> 
+            </div> 
+            <div class="media">
+                <a href="#"><span class="iconify" data-icon="akar-icons:instagram-fill" style="color: rgb(41, 41, 41);"></a></span>
+                <a href="#"><span class="iconify" data-icon="bi:facebook" style="color: rgb(51, 51, 51);"></a></span>
+                <a href="#"><span class="iconify" data-icon="akar-icons:twitter-fill" style="color: rgb(56, 56, 56);"></a></span>
+                <a href="#"><span class="iconify" data-icon="bx:bxl-telegram" style="color: rgb(58, 58, 58);"></a></span>
+            </div>
+            </footer>
+    
+    </section>
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>    
+    <script>
+        let name = document.getElementById("fname");
+        let email = document.getElementById("email");
+        let message = document.getElementById("message");
+        let button = document.getElementById("submit");
+        button.addEventListener('click', function () {
+            alert('Félicitation!\n\nBonjour Ms/Mme : ' + name.value + '\n\nvotre email est : ' + email.value + '\n\net votre message : '+ message.value + ' a été bien enregistrer','success');
+         });
+    </script>
+</body>
+</html>

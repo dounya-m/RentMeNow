@@ -5,6 +5,10 @@
     box-sizing: border-box;
     font-family: "poppinq", sans-serif;
     }
+
+    .active{
+        display: block !important;
+    }
 .header{
     color: rgb(255, 255, 255);
     background: linear-gradient(to top, rgba(0, 0, 0, 0.47), rgba(0, 0, 0, 0.205)),
@@ -12,15 +16,21 @@
     background-size: cover;
     background-position: center;
     }  
+    /* nav element */
     .logo{
         width: 25%;
     }
-    .nav > ul{
+    .nav  ul{
         display: flex;
         justify-content: space-between;
         align-items: center;
         list-style: none;
+        width: 40%;
+    }
+    .nav{
+        display: flex;
         padding: 2%;
+        justify-content: space-between;
     }
     .element{
         display: flex;
@@ -40,16 +50,17 @@
         padding:5% 5% 5% 8% ;
     }
 
-    a{
+    .nav a{
         color: white;
         text-decoration: none;
         font-size: 18px;
         font-weight: bold;
+        margin-left: 2vw;
     }
     nav a:hover{
         color: #D0772F;
     }
-
+    /* fin nan */
     .title{
         font-size: 42px;
     }
@@ -309,6 +320,9 @@
     font-weight: bold;
     font-size: 20px;
 }
+.bmw img{
+    width: 800px;
+}
 .par p{
     font-size: 18px;
 }
@@ -334,13 +348,287 @@
     margin-top: 5%;
     padding: auto;
 }
+.logos img{
+    width: 10%;
+}
+#bm{
+    width: 6.5%;
+}
+/* FOOTER STYLE */
+footer p{
+    text-align: center;
+    margin-top: 3vw;
+    margin-bottom: 1vw;
+    font-size: 18px;
+}
+footer{
+    margin-top: 3vw;
+}
+.footer-inner{
+    border-top: rgba(93, 93, 93, 0.425) solid 1px;
+    padding-top: 3vw;
+    margin-top: 3px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-inner h4{
+    font-size: 18px;
+    font-weight: bold;
+}
+.footer-inner hr{
+    margin-bottom: 1vw;
+    width: 12vw;
+    margin-top: 0.5vw;
+    
+}
+.footer-inner a , li{
+    list-style: none;
+    color: rgb(124, 124, 124);
+    margin-bottom: 1vw;
+    text-decoration: none;
+}
+.footer-inner a:hover{
+    color: #D0772F;
+}
+
+#menu{
+    display: none;
+}
+#menu_burger{
+    display: none;
+}
+#menu_burger li{
+    display: none;
+}
+@media screen and (max-width: 1590px) and (min-width: 701px) {
+    .bmw img{
+        width: 600px;
+    }
+    #menu_burger li{
+        display: none;
+    }
+    .logo {
+        width: 45%;
+    }
+.disc{
+    display: none;
+}
+.part{
+    gap: 0;
+}
 .bar{
+    gap:10%;
+}
+.nav{
+    gap: 0px;
+}
+
+}
+@media screen and (max-width: 700px) and (min-width: 280px){
+    .disc{
+        display: none;
+    }
+    .logo{
+        width: 55% !important;
+    }
+    .nav img{
+        width: 80%;
+    }
+    .login{
+        flex-direction: column;
+    }
+    .nav ul{
+        display: none;
+    }
+    .bot ul{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .bar{
+        margin: auto;
+        gap: 18%;
+        margin-bottom: 4%;
+        margin-top: 4%;
+    }
+    .part{
+        display: flex;
+        flex-direction: column;
+        margin-left: 3%;
+    }
+    .title h1{
+        font-size:28px;
+    }
+    main{
+        flex-direction: column;
+        gap: 70px;
+        align-content: center;
+        padding-bottom: 10%;
+    }
+    .contacts{
+        position: absolute;
+        top: 55%;
+        padding-right: 4%;
+    }
+    .bar{
+        margin: auto;
+        gap: 18%;
+        margin-bottom: 4%;
+        margin-top: 4%;
+    }
+    .part{
+        display: flex;
+        flex-direction: column;
+        margin-left: 3%;
+    }
+    .case{
+        flex-direction: column;
+        margin-bottom: 160vw;
+        align-items: center;
+    }
+    .case1 ,.case2,.case3{
+        gap: 10%;
+        width: 75%;
+        height: 90%;
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+    .case h3{
+        font-size: 22px;
+        margin-bottom: 10%;
+    }
+    .case p{
+        font-size: 16px;
+    }
+    h2, .map h2, .part1 h2 {
+        font-size: 24px;
+        margin-top: 3%;
+    }
+    .disc p {
+        font-size: 15px;
+        font-weight: lighter;
+    }
+    .signin , .signup{
+        height: 70px;
+        width: 150px;
+        font-size: 21px;
+        padding: 20px;
+    }
+    .login button{
+        font-size: 18px;
+    }
+    .login{
+        gap: 10PX;
+    }
+    .flou{
+        padding: 3% 3% 3% 6%;
+        width: 100%;
+    }
+    .rent img{
+        display: none;
+    }
+    .map h3{
+        font-size: 14x;
+    }
+    .step{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .bmw img{
+        width: 100%;
+    }
+    .par h4{
+        font-size: 18px;
+    }
+    .par p{
+        font-size: 15px;
+    }
+    .part2{
+        gap: 35px;
+    }
+    .desplay{
+        gap: 30px;
+        align-items: center;
+    }
+    #bm{
+        width: 16%;
+    }
+    .logos img {
+        width: 25%;
+    }
+    .logos{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .bot{
+        margin-left: 15%;
+        margin-top: 4%;
+        padding: 2%;
+    }
+    #menu{
+        display: inline;
+    }
+    .closeIcon{
+        display: none;
+    }
+
+    #menu{
+        background: none;
+        border: none;
+    }
+    #menu_burger{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 90px;
+        z-index: 1;
+        list-style: none;
+        background-color: #ffd1954b;
+        padding: 20%;
+        display: none;
+        margin: 3vw;
+    }
+    #menu_burger li{
+        display: block;
+        margin-bottom: 20px;
+    }
+    .bot{
+        display: none;
+    }
+    #menu_burger a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    /* #burger{
+        display: none;
+    } */
+    .footer-inner a{
+        font-size: 14px;
+    }
+    .footer-inner h4{
+        font-size: 16px;
+    }
+    footer p{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 460px){
+}
+
+
+
+
+
+
+
+/* .bar{
     display: flex;
     gap: 40%;
-    margin: 10%;
+    margin-top: 10%;
     margin-bottom: auto;
-    border-top: solid 1px rgb(177, 177, 177) ;
-    padding: 3%;
+    border-top: solid 1px rgb(195, 195, 195) ;
+    padding: 3% 3% 0% 3% ;
 
 }
 .rent img{
@@ -349,10 +637,14 @@
 .bot a{
     color: black;
 }
+.bot{
+    width: 100%;
+}
 .bot ul{
     list-style: none;
     display: flex;
-    gap: 25%;
+    width: 100% !important;
+    justify-content: space-between !important;
 }
 .bot :hover{
     color: rgb(117, 117, 117);
@@ -371,4 +663,4 @@
     width: 50px;
     height: 48px;
     padding: 9px;
-}
+} */

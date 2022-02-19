@@ -9,33 +9,191 @@
 </head>
 <body>
     <header class="hero">
+        <div class="fix">
         <nav class="nav">
-            <a href="index.html"><img src="blacklogo.png" class="logo"></a>
+            <a href="index.html"><img class="logoImg" src="blacklogo.png" ></a>
+            <button id="menu" style="color: rgb(66, 66, 66); width: 75px;"><img src="menuIcone.svg" alt="menu"></button>
+
             <ul>
-                <li><a href="index.html"> Acceuile</a></li>
-                <li><a href="gallery.html" >Gallerie</a></li>
-                <li><a href="booking.html">Réservation</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html" >Gallery</a></li>
+                <li><a href="booking.html">Reserve</a></li>
                 <li><a href="contact.html"  class="contact">Contact</a></li>
             </ul>
         </nav>
-        <div class="icones">
-            <span class="iconify" data-icon="akar-icons:instagram-fill" style="color: rgb(255, 255, 255);"  width="40px"></span>
-            <span class="iconify" data-icon="bi:facebook" style="color: rgb(255, 255, 255);" width="40px"></span>
-            <span class="iconify" data-icon="akar-icons:twitter-fill" style="color: rgb(255, 255, 255);"width="40px"></span>
-            <span class="iconify" data-icon="bx:bxl-telegram" style="color: rgb(255, 255, 255);"width="40px"></span>
+        <div>
+            <ul id="menu_burger">  
+                <li><a href="index.html" class="menuItem">Home</a></li>
+                <li><a href="gallery.html" class="menuItem" style="color: rgb(202, 121, 0);">Gallery</a></li>
+                <li><a href="booking.html" class="menuItem">Reserve</a></li>
+                <li><a href="contact.html" class="menuItem">Contact</a></li>
+            </ul>
         </div>
+    </div>
     </header>
-    <main class="container">
-        <div class="cars">
-            <div class="images">
-            <img src="./gallerie/voiture2.jpg" alt="BMW">
-            <img src="./gallerie/voitur1.jpg" alt="BMW">
-            <img src="./gallerie/voiture3.jpg" alt="BMW">
-            <img src="./gallerie/voiture4.jpg" alt="BMW">
-        </div>
-        </div>
+    <section class="gallery">
+        <div class="titre">
+        <h2>Our Gallery</h2>
+        <p id="title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio officia vero consequatur, voluptatum repellendus enim autem. Adipisci laborum libero, a quos aut ut necessitatibus nihil omnis Consectetur ipsum magni maiores.</p>
+    </div>
+        <div class="gallery-container">
 
-    </main>
+            <div class="gallery-item">
+                <div class="gallery-overlay">
+                    <h3>Car 2020</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eius, maxime doloremque laborum est sapiente quibusdam omnis eligendi nihil blanditiis eum provident cupiditate architecto. Expedita hic ducimus veritatis perferendis neque.</p>
+                    <a href="booking.html" class="btn">Reserve ></a>
+                </div>
+                <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="car">
+            </div>
+
+            <div class="gallery-item">
+                <div class="gallery-overlay">
+                    <h3>Car 2012</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eius, maxime doloremque laborum est sapiente quibusdam omnis eligendi nihil blanditiis eum provident cupiditate architecto. Expedita hic ducimus veritatis perferendis neque.</p>
+                    <a href="booking.html" class="btn">Reserve ></a>
+                </div>
+                <img src="https://images.unsplash.com/photo-1610399214658-52b9fdea4627?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="car">
+            </div>
+
+            <div class="gallery-item">
+                <div class="gallery-overlay">
+                    <h3>Car 2020</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eius, maxime doloremque laborum est sapiente quibusdam omnis eligendi nihil blanditiis eum provident cupiditate architecto. Expedita hic ducimus veritatis perferendis neque.</p>
+                    <a href="booking.html" class="btn">Reserve ></a>
+                </div>
+                <img src="https://images.unsplash.com/photo-1537984822441-cff330075342?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="car">
+            </div>
+
+            <div class="gallery-item">
+                <div class="gallery-overlay">
+                    <h3>Moto 2020</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eius, maxime doloremque laborum est sapiente quibusdam omnis eligendi nihil blanditiis eum provident cupiditate architecto. Expedita hic ducimus veritatis perferendis neque.</p>
+                    <a href="booking.html" class="btn">Reserve ></a>
+                </div>
+                <img src="https://images.unsplash.com/photo-1591637333184-19aa84b3e01f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="moto">
+            </div>
+
+            <div class="gallery-item">
+                <div class="gallery-overlay">
+                    <h3>Truck 2014</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eius, maxime doloremque laborum est sapiente quibusdam omnis eligendi nihil blanditiis eum provident cupiditate architecto. Expedita hic ducimus veritatis perferendis neque.</p>
+                    <a href="booking.html" class="btn">Reserve ></a>
+                </div>
+                <img src="https://images.unsplash.com/photo-1541789575190-4dcfb12b6793?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1202&q=80" alt="truck">
+            </div>
+
+            <div class="gallery-item">
+                <div class="gallery-overlay">
+                    <h3>Truck 2012</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eius, maxime doloremque laborum est sapiente quibusdam omnis eligendi nihil blanditiis eum provident cupiditate architecto. Expedita hic ducimus veritatis perferendis neque.</p>
+                    <a href="booking.html" class="btn">Reserve ></a>
+                </div>
+                <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="truck">
+                </div>
+
+            <div class="gallery-item">
+                <div class="gallery-overlay">
+                    <h3>Moto 2019</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eius, maxime doloremque laborum est sapiente quibusdam omnis eligendi nihil blanditiis eum provident cupiditate architecto. Expedita hic ducimus veritatis perferendis neque.</p>
+                    <a href="booking.html" class="btn">Reserve ></a>
+                </div>
+                <img src="https://images.unsplash.com/photo-1517846693594-1567da72af75?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt="moto">
+            </div>
+
+            <div class="gallery-item">
+                <div class="gallery-overlay">
+                    <h3>Egine de chantier 2018</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eius, maxime doloremque laborum est sapiente quibusdam omnis eligendi nihil blanditiis eum provident cupiditate architecto. Expedita hic ducimus veritatis perferendis neque.</p>
+                    <a href="booking.html" class="btn">Reserve ></a>
+                </div>
+                <img src="https://images.unsplash.com/photo-1495036019936-220b29b930ea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="egine">
+            </div>
+
+            <div class="gallery-item">
+                <div class="gallery-overlay">
+                    <h3>Egine de chantier 2017</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eius, maxime doloremque laborum est sapiente quibusdam omnis eligendi nihil blanditiis eum provident cupiditate architecto. Expedita hic ducimus veritatis perferendis neque.</p>
+                    <a href="booking.html" class="btn">Reserve ></a>
+                </div>
+                <img src="https://images.unsplash.com/photo-1629807473015-41699c4471b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="egine">
+            </div>
+
+            <div class="gallery-item">
+                <div class="gallery-overlay">
+                    <h3>Moto 2017</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eius, maxime doloremque laborum est sapiente quibusdam omnis eligendi nihil blanditiis eum provident cupiditate architecto. Expedita hic ducimus veritatis perferendis neque.</p>
+                    <a href="booking.html" class="btn">Reserve ></a>
+                </div>
+                <img src="https://images.unsplash.com/photo-1582092722992-b2f960bafbfb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="moto">
+            </div>
+            
+            <div class="gallery-item">
+                <div class="gallery-overlay">
+                    <h3>Moto</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eius, maxime doloremque laborum est sapiente quibusdam omnis eligendi nihil blanditiis eum provident cupiditate architecto. Expedita hic ducimus veritatis perferendis neque.</p>
+                    <a href="booking.html" class="btn">Reserve ></a>
+                </div>
+
+                <img src="https://images.unsplash.com/photo-1558981033-0f0309284409?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="moto">
+            </div>
+
+            <div class="gallery-item">
+                <div class="gallery-overlay">
+                    <h3>Egine de chantier 2017</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eius, maxime doloremque laborum est sapiente quibusdam omnis eligendi nihil blanditiis eum provident cupiditate architecto. Expedita hic ducimus veritatis perferendis neque.</p>
+                    <a href="booking.html" class="btn">Reserve ></a>
+                </div>
+                <img src="https://images.unsplash.com/photo-1580901369227-308f6f40bdeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80" alt="egine">
+            </div>
+        </div>
+        <footer>
+            <footer class="container">
+                <div class="footer-inner">
+                  <div>
+                    <h4>About Us</h4>
+                    <hr />
+                    <ul class="footer-menu">
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#">Questions</a></li>
+                      <li><a href="#">Help</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Company</h4>
+                    <hr />
+                    <ul class="footer-menu">
+                      <li><a href="#">Services</a></li>
+                      <li><a href="#">Jobs</a></li>
+                      <li><a href="#">Cars</a></li>
+                      <li><a href="#">Advertising</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Legal Notice</h4>
+                    <hr />
+                    <ul class="footer-menu">
+                      <li><a href="#">Privacy Policy</a></li>
+                      <li><a href="#">Terms Of Use</a></li>
+                      <li><a href="#">Legal</a></li>
+                      <li><a href="#">Help</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <p>All Rights Reserveed - RentMeNow 2022</p>
+              </footer>
+    </section>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script>
+
+        const menu = document.getElementById("menu");
+        const navMenu = document.getElementById("menu_burger");
+        
+        menu.addEventListener("click" , function() {
+            navMenu.classList.toggle("active");
+        })
+
+</script>
 </body>
 </html>

@@ -10,14 +10,21 @@
 <body>
     <header class="header">
         <nav class="nav">
+            <a href="index.html"><img src="Logo.png" class="logo"></a>
+            <button id="menu" style= "width: 145px;"><img src="menu.svg" alt="menu"></button>
             <ul>
-                <li><a href="index.html"> <img src="logo.png" class="logo"></a> </li>
-                <li><a href="index.html"> Acceuile</a></li>
-                <li><a href="gallery.html" >Gallerie</a></li>
-                <li><a href="booking.html">Réservation</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html" >Gallery</a></li>
+                <li><a href="booking.html">Reserve</a></li>
                 <li><a href="contact.html"  class="contact">Contact</a></li>
             </ul>
         </nav>
+        <ul id="menu_burger">  
+            <li><a href="index.html" class="menuItem" > Home</a></li>
+            <li><a href="gallery.html" class="menuItem">Gallery</a></li>
+            <li><a href="booking.html" class="menuItem">Reserve</a></li>
+            <li><a href="contact.html" style="color: rgb(202, 121, 0);">Contact</a></li>
+        </ul>
     <div class="content">
         <h1 class="title">
             Get in Touch
@@ -29,7 +36,7 @@
     </div>    
     </header>   
     <section class="contacts">
-        <main>
+        <!-- <main> -->
         <div class="information">
             <div class="part1">
                 <h2>Contact Information</h2>
@@ -53,7 +60,6 @@
         </div>    
         </div>
         <div class="client">
-            <form action="#">
                 <div class="info">
                 <div class="par">
                 <div class="fullname" id="column">
@@ -77,33 +83,57 @@
                 <input type="submit" id="submit" value="Submit">
             </div>
             </div>
-            </form>
         </div>
-    </main>
-        <footer>
-            <div class="bar">   
-                <div class="rent">
-                <img src="blacklogo.png" alt="logo">
-                </div>
-                <div class="bot">   
-                <ul>
-                    <li><a href="index.html"> Acceuile</a></li>
-                    <li><a href="gallerie.html">Gallerie</a></li>
-                    <li><a href="booking.html">Réservation</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                </div> 
-            </div> 
-            <div class="media">
-                <a href="#"><span class="iconify" data-icon="akar-icons:instagram-fill" style="color: rgb(41, 41, 41);"></a></span>
-                <a href="#"><span class="iconify" data-icon="bi:facebook" style="color: rgb(51, 51, 51);"></a></span>
-                <a href="#"><span class="iconify" data-icon="akar-icons:twitter-fill" style="color: rgb(56, 56, 56);"></a></span>
-                <a href="#"><span class="iconify" data-icon="bx:bxl-telegram" style="color: rgb(58, 58, 58);"></a></span>
-            </div>
-            </footer>
-    
+    <!-- </main> -->
     </section>
-    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>    
+
+    <footer>
+        <footer class="container">
+            <div class="footer-inner">
+              <div>
+                <h4>About Us</h4>
+                <hr />
+                <ul class="footer-menu">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Questions</a></li>
+                  <li><a href="#">Help</a></li>
+                </ul>
+              </div>
+              <div>
+                <h4>Company</h4>
+                <hr />
+                <ul class="footer-menu">
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Jobs</a></li>
+                  <li><a href="#">Cars</a></li>
+                  <li><a href="#">Advertising</a></li>
+                </ul>
+              </div>
+              <div>
+                <h4>Legal Notice</h4>
+                <hr />
+                <ul class="footer-menu">
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms Of Use</a></li>
+                  <li><a href="#">Legal</a></li>
+                  <li><a href="#">Help</a></li>
+                </ul>
+              </div>
+            </div>
+            <p>All Rights Reserveed - RentMeNow 2022</p>
+          </footer>
+
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script> 
+    <script>
+        const menu = document.getElementById("menu");
+        const navMenu = document.getElementById("menu_burger");
+        
+        menu.addEventListener("click" , function() {
+            navMenu.classList.toggle("active");
+        })
+        
+        </script>   
     <script>
         let name = document.getElementById("fname");
         let email = document.getElementById("email");
@@ -111,7 +141,7 @@
         let button = document.getElementById("submit");
         button.addEventListener('click', function () {
             alert('Félicitation!\n\nBonjour Ms/Mme : ' + name.value + '\n\nvotre email est : ' + email.value + '\n\net votre message : '+ message.value + ' a été bien enregistrer','success');
-         });
+        });
     </script>
 </body>
 </html>
